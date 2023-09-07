@@ -19,13 +19,13 @@
     - debug:
         var: vpcout
 
-    - name: create Public Subnets 1 in Zone1
+    - name: Create Public Subnets 1 in Zone1
       ec2_vpc_subnets:
         vpc_1: "{{vpcout.vpc.id}}"
         region: "{{region}}"
         az: "{{zone1}}"
         state: "{{state}}"
-        cidr: "{{ PubSub1Cidr}}"
+        cidr: "{{PubSub1Cidr}}"
         map_public: yes
         resources_tags:
           Name: vprofile-pubsub1
