@@ -153,8 +153,8 @@
         - pubsub3_out.subnet.id
         - NATGW_out.nat_gateway_id
         - igw_out.gateway_id
-        - privRT_out.route_table.id
-        - pubRT_out.route_table.id
+        - privRT_OUT.route_table.id
+        - pubRT_OUT.route_table.id
 
     - set_fact:
         vpcid: "{{vpcout.vpc.id}}"
@@ -165,9 +165,9 @@
         pubsub2id: "{{pubsub2_out.subnet.id}}"
         pubsub3id: "{{pubsub3_out.subnet.id}}"
         igwid: "{{igw_out.gateway_id}}"
-        pubRTid: "{{pubRT_out.route_table.id}}"
+        pubRTid: "{{pubRT_OUT.route_table.id}}"
         NATGWid: "{{NATGW_out.nat_gateway_id}}"
-        privRTid: "{{privRT_out.route_table.id}}"
+        privRTid: "{{privRT_OUT.route_table.id}}"
         cacheable: yes
 
     - name: Create variables file for vpc output
