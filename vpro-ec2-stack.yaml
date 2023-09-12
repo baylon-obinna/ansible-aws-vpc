@@ -83,7 +83,7 @@
           Name: "web01"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{vproStackSG_out.group_id}}"
+        group_id: "{{vprostackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: web01_out
 
@@ -104,7 +104,7 @@
           Name: "app01"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{vproStackSG_out.group_id}}"
+        group_id: "{{vprostackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: app01_out
 
@@ -125,7 +125,7 @@
           Name: "mc01"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{vproStackSG_out.group_id}}"
+        group_id: "{{vprostackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: mc01_out
 
@@ -146,7 +146,7 @@
           Name: "rmq01"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{vproStackSG_out.group_id}}"
+        group_id: "{{vprostackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: rmq01_out
 
@@ -167,7 +167,7 @@
           Name: "db01"
           Project: Vprofile
           Owner: DevOps Team
-        group_id: "{{vproStackSG_out.group_id}}"
+        group_id: "{{vprostackSG_out.group_id}}"
         vpc_subnet_id: "{{privsub1id}}"
       register: db01_out
 
